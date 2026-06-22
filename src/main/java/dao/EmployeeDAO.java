@@ -1,3 +1,11 @@
+-e /**
+ * Employee Payroll System
+ * @author Soundarya Badiger
+ * @version 1.0
+ * @since 2025
+ * KLE College of Engineering and Technology
+ * Electronics and Communication Engineering, Bengaluru
+ */
 package dao;
 
 import java.sql.ResultSet;
@@ -26,7 +34,8 @@ public class EmployeeDAO {
 
             System.out.println("Connection Success");
 
-            String query = "INSERT INTO employees(name,email,department,salary,joining_date,photo)\r\n"
+            String query = "INSERT INTO employees(name,email,department,salary,joining_date,photo)
+"
             		+ "VALUES(?,?,?,?,?,?)";
 
             PreparedStatement ps = con.prepareStatement(query);
